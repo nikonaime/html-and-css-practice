@@ -7,64 +7,55 @@
     <title>4. Forms</title>
 </head>
 <body>
-    <form action="/">
-        <label>
+    <p>Sign in</p>
+        <form action="/">
+            <label>
+                <p>
+                Full Name:
+                <input type="text" placeholder="Enter full name" name="fullName" required>
+                </p>
+            </label>
+            <label>
+                <p>
+                E-mail address:
+                <input type="email" placeholder="Enter email" name="email" required>
+                </p>
+            </label>
             <p>
-            Name:
-            <input type="text" name="name" required placeholder="Niko Nagervadze">
+                Communication:
+                <label>
+                    <p>
+                    Email
+                    <input type="checkbox" name="communication" value="Email">
+                    </p>
+                </label>
+                <label>
+                    <p>
+                    SMS
+                    <input type="checkbox" name="communication" value="SMS">
+                    </p>
+                </label>
+                <label>
+                    <p>
+                    Phone
+                    <input type="checkbox" name="communication" value="Phone" checked>
+                    </p>
+                </label>
             </p>
-        </label>
-        <label>
             <p>
-            E-mail:
-            <input type="email" name="email" required placeholder="niko@example.com">
+                User group:
             </p>
-        </label>
-        <label>
             <p>
-            Password:
-            <input type="password" name="password" required placeholder="••••••••">
+            <input type="radio" name="userGroup" value="Sales Person" required>Sales person
+            <input type="radio" name="userGroup" value="Customer" required>Customer
             </p>
-        </label>
-        <label>
             <p>
-            Number:
-            <input type="number" name="number" required placeholder="42">
+                Please select user group
             </p>
-        </label>
-        <label>
             <p>
-            Date:
-            <input type="date" name="date" value="1998-12-18" required>
+                <button>Submit</button>
+                <input type="reset" value="Cancel">
             </p>
-        </label>
-        <label>
-            <p>
-            Time
-            <input type="time" name="time" value="13:00" required>
-            </p>
-        </label>
-        <label>
-            <p>
-            Color: 
-            <input type="color" name="color" value="#661063" required>
-            </p>
-        </label>
-        <label>
-            <p>
-            <input type="range" name="range" required>
-            </p>
-        </label>
-        <label>
-            <p>
-            Description:
-            <br>
-            <textarea name="textarea" cols="30" rows="10" required></textarea>
-            </p>
-        </label>
-        <button>Submit</button>
-        <label for="resetButton"></label>
-        <input type="reset" name="resetButton" value="Clear">
-    </form>
-</body>
+        </form>
+    </body>
 </html>
