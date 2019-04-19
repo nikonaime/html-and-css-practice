@@ -10,58 +10,61 @@
     <form action="/">
         <label>
             <p>
-            Phone:
-            <input type="number" name="phone" required>
+            Name:
+            <input type="text" name="name" required placeholder="Niko Nagervadze">
             </p>
         </label>
         <label>
             <p>
             E-mail:
-            <input type="email" name="email" required>
+            <input type="email" name="email" required placeholder="niko@example.com">
             </p>
         </label>
         <label>
             <p>
             Password:
-            <input type="password" name="password" required>
+            <input type="password" name="password" required placeholder="••••••••">
             </p>
         </label>
         <label>
             <p>
-            Confirm Password:
-            <input type="password" name="passwordConfirm" required>
+            Number:
+            <input type="number" name="number" required placeholder="42">
             </p>
         </label>
         <label>
             <p>
-            Nickname:
-            <input type="text" name="nickname" required>
+            Date:
+            <input type="date" name="date" value="1998-12-18" required>
             </p>
         </label>
         <label>
             <p>
-            Habitual Residence:
-            <select name="residence">
-                <option>Zheijang / Hangzhou / West Lake</option>
-                <option>Just test option 1 to see dropdown works</option>
-                <option>Just test option 2 to see dropdown works</option>
-                <option>Just test option 3 to see dropdown works</option>
-            </select>
+            Time
+            <input type="time" name="time" value="13:00" required>
             </p>
         </label>
         <label>
             <p>
-            Website: 
-            <input type="url" placeholder="website" name="website" required>
+            Color: 
+            <input type="color" name="color" value="#661063" required>
             </p>
         </label>
         <label>
             <p>
-            <input type="checkbox" name="agreement" required>
-            I have read the <a href="https://google.com">agreement</a>
+            <input type="range" name="range" required>
+            </p>
+        </label>
+        <label>
+            <p>
+            Description:
+            <br>
+            <textarea name="textarea" cols="30" rows="10" required></textarea>
             </p>
         </label>
         <button>Submit</button>
+        <label for="resetButton"></label>
+        <input type="reset" name="resetButton" value="Clear">
     </form>
 </body>
 </html>
