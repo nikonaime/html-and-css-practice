@@ -31,3 +31,11 @@ body {
     color: #f5212d;
     border: 2px solid #d9d9d9;
 }
+
+.large{
+    padding: 20px;
+}
+
+.small{
+    padding: 0.5px;
+}
