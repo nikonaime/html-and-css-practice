@@ -39,3 +39,7 @@ body {
 .small{
     padding: 0.5px;
 }
+
+.ghost{
+    background-color: initial;
+}
