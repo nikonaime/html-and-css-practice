@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0 auto;
+    display: grid; 
+    width: 940px;
+    height: 600px;
+    grid-gap: 20px;
+    grid-template-areas: "header-1 header-1 header-2 header-2 header-3 header-3 header-4 header-4"
+                         "span-1 span-2 span-3 span-4 span-5 span-6 span-7 span-8"  
+                         "content-1 content-1 content-1 content-1 content-1 content-1 content-2 content-2"
+                         "content-3 content-3 content-4 content-4 content-4 content-4 content-4 content-4"
+                         "footer-1 footer-1 footer-1 footer-1 footer-2 footer-2 footer-2 footer-2";
+    grid-template-rows: 200px 100px 220px 220px 220px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+
+section > div {
+    background-color: rgb(204, 204, 204);
+}
+
+.header-1 {
+    grid-area: header-1;
+}
+.header-2 {
+    grid-area: header-2;
+}
+.header-3 {
+    grid-area: header-3;
+}
+.header-4 {
+    grid-area: header-4;
+}
+
+.span-1 {
+    grid-area: span-1;
+}
+
+.span-2 {
+    grid-area: span-2;
+}
+.span-3 {
+    grid-area: span-3;
+}
+.span-4 {
+    grid-area: span-4;
+}
+.span-5 {
+    grid-area: span-5;
+}
+.span-6 {
+    grid-area: span-6;
+}
+.span-7 {
+    grid-area: span-7;
+}
+.span-8 {
+    grid-area: span-8;
+}
+.content-1 {
+    grid-area: content-1;
+}
+
+.content-2 {
+    grid-area: content-2;
+}
+
+.content-3 {
+    grid-area: content-3;
+}
+
+.content-4 {
+    grid-area: content-4;
+}
+.footer-1 {
+    grid-area: footer-1;
+}
+.footer-2 {
+    grid-area: footer-2;
+}
